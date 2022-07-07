@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5433/"
+    username: "postgres"
+    password: "postgres"
+
+  flyway:
+    driver-class-name: org.postgresql.Driver
+    validate-migration-naming: true
+

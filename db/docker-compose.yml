@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  simple-task-postgres:
+    image: postgres:latest
+    restart: on-failure
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: simpleTask
+    ports:
+      - 5433:5432
